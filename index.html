@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathwik</title>
+    <meta name="description" content="Portfolio of Nagothu Bala Sathwik - Backend Developer & CS Undergraduate at VIT-AP specializing in Spring Boot, Java, AWS Cloud, and scalable system architectures.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Aurora Blobs -->
+    <div class="aurora-container">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Sathwik</a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#profiles" class="nav-link">Profiles</a>
+                <a href="#contact" class="nav-link nav-cta">Get In Touch</a>
+            </nav>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-code"></i> Open to B.Tech 2027 Roles & Internships
+                </div>
+                <h1 class="hero-title">Nagothu Bala Sathwik</h1>
+                <div class="hero-subtitle">
+                    <span class="static-role">Backend Developer</span>
+                    <span class="role-separator">|</span>
+                    <span class="dynamic-role" id="typewriter"></span>
+                </div>
+                <p class="hero-tagline">
+                    CS Undergraduate at VIT-AP building high-throughput systems, secure REST APIs, and predictive machine learning models.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="assets/sathwik.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="resume-download-btn"><i class="fa-solid fa-download"></i> Download Resume</a>
+                </div>
+                <div class="hero-status-row">
+                    <span>VIT-AP University</span>
+                    <span class="status-separator">•</span>
+                    <span>CGPA 9.01</span>
+                    <span class="status-separator">•</span>
+                    <span>Amaravati, India</span>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/balasathwiknagothu" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+                    <a href="https://www.linkedin.com/in/bala-sathwik-nagothu/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+                    <a href="https://leetcode.com/u/sathwiknagothu/" target="_blank" rel="noopener noreferrer" class="social-btn"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="vertical-align: -0.125em;"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.541l5.097 4.41c.238.204.542.302.853.284a1.36 1.36 0 0 0 .848-.387 1.374 1.374 0 0 0 .437-.96 1.374 1.374 0 0 0-.387-1.012l-5.044-4.364a3.178 3.178 0 0 1-.722-.86 3.09 3.09 0 0 1-.29-.982 3.04 3.04 0 0 1 .15-1.233 3.047 3.047 0 0 1 .59-1.07l3.864-4.136 5.394-5.772A1.374 1.374 0 0 0 14.444.4a1.374 1.374 0 0 0-.961-.4zM22.65 13.916a1.374 1.374 0 0 0-.96-.437H11.232a1.374 1.374 0 0 0-.96.437 1.374 1.374 0 0 0-.437.96 1.374 1.374 0 0 0 .437.961h10.457a1.374 1.374 0 0 0 .961-.437 1.374 1.374 0 0 0 .438-.96 1.374 1.374 0 0 0-.438-.962z"/></svg><span>LeetCode</span></a>
+                    <a href="mailto:balasathwiknagothu@gmail.com" class="social-btn"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section scroll-reveal" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-card glass-card">
+                    <p class="about-text">
+                        I am a Computer Science Undergraduate at VIT-AP with a strong foundation in Java, Spring Boot, and cloud architectures. A verified AWS Academy Graduate and Oracle GenAI Professional, I design scalable backend systems, real-time chat engines, and secure APIs. With 300+ LeetCode problems solved, I enjoy tackling complex algorithms and building robust, cloud-native services.
+                    </p>
+                    
+                    <div class="education-grid">
+                        <div class="education-item">
+                            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="edu-details">
+                                <h3>B.Tech in Computer Science &amp; Engineering</h3>
+                                <p class="edu-meta">VIT-AP University, Amaravati | 2023 – present</p>
+                                <p class="edu-score">CGPA: <strong>9.01</strong> / 10 (Semester 6)</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                            <div class="edu-details">
+                                <h3>Intermediate Education (MPC)</h3>
+                                <p class="edu-meta">Sri Chaitanya Junior College, Narasaraopet | 2021 – 2023</p>
+                                <p class="edu-score">Percentage: <strong>97.7%</strong> (977 / 1000)</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-icon"><i class="fa-solid fa-book"></i></div>
+                            <div class="edu-details">
+                                <h3>Secondary School (10th Standard)</h3>
+                                <p class="edu-meta">St. Mary's English Medium School | 2020 – 2021</p>
+                                <p class="edu-score">Percentage: <strong>100%</strong> (600 / 600)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section scroll-reveal" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <!-- Card 1: Programming -->
+                <div class="skill-card glass-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-terminal"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C / C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Backend & Cloud -->
+                <div class="skill-card glass-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Backend &amp; Cloud</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">AWS Cloud</span>
+                        <span class="skill-tag">WebSockets / STOMP</span>
+                        <span class="skill-tag">JWT Security</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Databases -->
+                <div class="skill-card glass-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Databases &amp; Web</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">HTML5 / CSS3</span>
+                        <span class="skill-tag">DBMS Concepts</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Dev Tools & CSE -->
+                <div class="skill-card glass-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>Tools &amp; Core CS</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git &amp; GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">OOPs &amp; OS</span>
+                        <span class="skill-tag">Computer Networks</span>
+                        <span class="skill-tag">Theory of Comp (TOC)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section scroll-reveal" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">All projects built solo from planning to deployment.</p>
+            <div class="projects-list">
+                
+                <!-- Project 1: Chat App Backend -->
+                <article class="project-card glass-card">
+                    <div class="project-meta-line">
+                        <span class="project-duration"><i class="fa-regular fa-calendar"></i> Feb – May 2026</span>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">STOMP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Chat App Backend</h3>
+                    <div class="project-body">
+                        <div class="project-column">
+                            <h4><i class="fa-solid fa-circle-exclamation"></i> The Problem</h4>
+                            <p>Traditional HTTP REST APIs require constant client-side polling to fetch new messages. This creates high latency, wastes bandwidth, and puts heavy unnecessary load on the database.</p>
+                        </div>
+                        <div class="project-column">
+                            <h4><i class="fa-solid fa-star"></i> Key Features</h4>
+                            <ul>
+                                <li>Bidirectional, real-time message exchange.</li>
+                                <li>Stateful user connection tracking.</li>
+                                <li>Multi-room management &amp; historical message persistence.</li>
+                            </ul>
+                        </div>
+                        <div class="project-column">
+                            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Challenge &amp; Solution</h4>
+                            <p><strong>Challenge:</strong> Securing WebSocket connections and authorizing users without introducing overhead to the handshakes.</p>
+                            <p><strong>Solution:</strong> Integrated a custom handshake interceptor that decodes and validates JWT tokens during the initial upgrade request, ensuring only authenticated connections are established.</p>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/balasathwiknagothu/chat-app-backend" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Repository</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: URL Shortener -->
+                <article class="project-card glass-card">
+                    <div class="project-meta-line">
+                        <span class="project-duration"><i class="fa-regular fa-calendar"></i> Aug – Nov 2025</span>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Secure URL Shortener</h3>
+                    <div class="project-body">
+                        <div class="project-column">
+                            <h4><i class="fa-solid fa-circle-exclamation"></i> The Problem</h4>
+                            <p>Long, complex URLs are difficult to share and lack tracking capabilities. Furthermore, simple URL redirection engines can easily be abused if endpoints are not secured.</p>
+                        </div>
+                        <div class="project-column">
+                            <h4><i class="fa-solid fa-star"></i> Key Features</h4>
+                            <ul>
+                                <li>Secure URL shortener with custom aliases.</li>
+                                <li>Click count analytics per short link.</li>
+                                <li>JWT-based user registration and private endpoint security.</li>
+                            </ul>
+                        </div>
+                        <div class="project-column">
+                            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Challenge &amp; Solution</h4>
+                            <p><strong>Challenge:</strong> Ensuring that generated short links are collision-free while maintaining a fast redirection response time.</p>
+                            <p><strong>Solution:</strong> Designed a Base62 encoding algorithm applied to auto-incrementing database IDs, guaranteeing 100% collision-free short paths, while optimizing indexes on the mapping column in MySQL to achieve sub-10ms redirection latencies.</p>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/balasathwiknagothu/url-shortener" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Repository</a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Stock Price Prediction -->
+                <article class="project-card glass-card">
+                    <div class="project-meta-line">
+                        <span class="project-duration"><i class="fa-regular fa-calendar"></i> May – Jul 2025</span>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Stock Price Prediction Dashboard</h3>
+                    <div class="project-body">
+                        <div class="project-column">
+                            <h4><i class="fa-solid fa-circle-exclamation"></i> The Problem</h4>
+                            <p>Raw financial spreadsheets are dense, difficult to interpret, and lack real-time predictive indicators for average users.</p>
+                        </div>
+                        <div class="project-column">
+                            <h4><i class="fa-solid fa-star"></i> Key Features</h4>
+                            <ul>
+                                <li>Interactive Flask web dashboard for stock analytics.</li>
+                                <li>Automated historical data cleaning and feature engineering pipelines.</li>
+                                <li>Visual projection of predicted price trends.</li>
+                            </ul>
+                        </div>
+                        <div class="project-column">
+                            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Challenge &amp; Solution</h4>
+                            <p><strong>Challenge:</strong> Transitioning raw historical data from static files into structured formats suitable for model inference without slowing down page load times.</p>
+                            <p><strong>Solution:</strong> Engineered a clean ETL script in Python utilizing Pandas for vector-based mathematical operations, serving clean prediction payloads to the Flask frontend under 50ms.</p>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/balasathwiknagothu/stock-price-prediction" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Repository</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section scroll-reveal" id="certifications">
+            <h2 class="section-title">Certifications</h2>
+            
+            <!-- Tier 1 Certifications (Featured Cards) -->
+            <div class="certs-grid">
+                <div class="cert-card glass-card">
+                    <span class="cert-tag cert-active">Valid Until 2027</span>
+                    <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>OCI 2025 Certified Generative AI Professional</h3>
+                    <p class="cert-issuer">Oracle University | July 2025</p>
+                    <p class="cert-id">ID: 3207775740CI25GAIOCP</p>
+                </div>
+                <div class="cert-card glass-card">
+                    <span class="cert-tag cert-active">Valid Until 2027</span>
+                    <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>OCI 2025 AI Foundations Associate</h3>
+                    <p class="cert-issuer">Oracle University | June 2025</p>
+                    <p class="cert-id">ID: 3207775740CI25AICFA</p>
+                </div>
+                <div class="cert-card glass-card">
+                    <span class="cert-tag cert-credential">Verifiable Badge</span>
+                    <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h3>AWS Academy Graduate - Cloud Architecting</h3>
+                    <p class="cert-issuer">AWS Academy | Oct 2025</p>
+                    <a href="https://www.credly.com/go/itmYAvrK" target="_blank" rel="noopener noreferrer" class="btn btn-tiny"><i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Credential</a>
+                </div>
+                <div class="cert-card glass-card">
+                    <span class="cert-tag cert-credential">Verifiable Badge</span>
+                    <div class="cert-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+                    <h3>AWS Academy Graduate - Cloud Foundations</h3>
+                    <p class="cert-issuer">AWS Academy | Sept 2025</p>
+                    <a href="https://www.credly.com/go/x91zCPAD" target="_blank" rel="noopener noreferrer" class="btn btn-tiny"><i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Credential</a>
+                </div>
+                <div class="cert-card glass-card">
+                    <span class="cert-tag cert-course">39.5 Hours Course</span>
+                    <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+                    <h3>Oracle Java SE 21 Developer Professional</h3>
+                    <p class="cert-issuer">Udemy (Andrii Piatakha) | July 2026</p>
+                    <p class="cert-id">ID: UC-5ee5727f-4671-4ea7-8971-6eef7e8bdb77</p>
+                </div>
+            </div>
+
+            <!-- Tier 2 Certifications (Accordion) -->
+            <div class="tier2-accordion">
+                <button class="accordion-header glass-card" id="accordion-toggle">
+                    <span><i class="fa-solid fa-list-check"></i> More Certifications &amp; Learning Track Courses</span>
+                    <i class="fa-solid fa-chevron-down chevron-icon"></i>
+                </button>
+                <div class="accordion-content glass-card" id="accordion-content">
+                    <table class="certs-table">
+                        <thead>
+                            <tr>
+                                <th>Certificate</th>
+                                <th>Issuer</th>
+                                <th>Date</th>
+                                <th>Verification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SQL (Advanced) Skill Certification</td>
+                                <td>HackerRank</td>
+                                <td>May 2025</td>
+                                <td><a href="https://www.hackerrank.com/certificates/575e13e5f084" target="_blank" rel="noopener noreferrer" class="link-verify">ID: 575E13E5F084</a></td>
+                            </tr>
+                            <tr>
+                                <td>Data Science Masterclass - ML &amp; AI Projects</td>
+                                <td>Udemy</td>
+                                <td>Aug 2025</td>
+                                <td>ID: UC-07b66eae-9fd2-45a1-962a-e56198429df7</td>
+                            </tr>
+                            <tr>
+                                <td>2025 Complete Python Bootcamp (Zero to Hero)</td>
+                                <td>Udemy</td>
+                                <td>July 2025</td>
+                                <td>ID: UC-aefcdd9e-f389-4fad-bf77-94631c7a859d</td>
+                            </tr>
+                            <tr>
+                                <td>UX Design Introduction Job Simulation</td>
+                                <td>Lloyds Banking Group (Forage)</td>
+                                <td>July 2025</td>
+                                <td>Enrol: AkhwZmrrkTEF2dgb8</td>
+                            </tr>
+                            <tr>
+                                <td>Image Processing Onramp</td>
+                                <td>MathWorks Training</td>
+                                <td>Aug 2025</td>
+                                <td>Completed (100%)</td>
+                            </tr>
+                            <tr>
+                                <td>Foundations of Prompt Engineering</td>
+                                <td>AWS Training &amp; Certification</td>
+                                <td>June 2025</td>
+                                <td>Learning Track Course</td>
+                            </tr>
+                            <tr>
+                                <td>Fundamentals of ML and Artificial Intelligence</td>
+                                <td>AWS Training &amp; Certification</td>
+                                <td>June 2025</td>
+                                <td>Learning Track Course</td>
+                            </tr>
+                            <tr>
+                                <td>Planning a Machine Learning Project</td>
+                                <td>AWS Training &amp; Certification</td>
+                                <td>June 2025</td>
+                                <td>Learning Track Course</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coding Profiles & Achievements -->
+        <section class="profiles-section scroll-reveal" id="profiles">
+            <h2 class="section-title">Coding Profiles &amp; Achievements</h2>
+            <div class="badges-grid">
+                <!-- Badge Card 1: LeetCode Solved -->
+                <div class="badge-card glass-card">
+                    <div class="badge-icon fire-glow"><span class="badge-emoji">🔥</span></div>
+                    <div class="badge-info">
+                        <h3>300+ Problems Solved</h3>
+                        <p>LeetCode</p>
+                    </div>
+                </div>
+
+                <!-- Badge Card 2: LeetCode Consistency -->
+                <div class="badge-card glass-card">
+                    <div class="badge-icon medal-glow"><span class="badge-emoji">🏅</span></div>
+                    <div class="badge-info">
+                        <h3>50-Day Consistency Badge</h3>
+                        <p>LeetCode</p>
+                    </div>
+                </div>
+
+                <!-- Badge Card 3: HackerRank Java/SQL -->
+                <div class="badge-card glass-card">
+                    <div class="badge-icon star-glow"><span class="badge-emoji">⭐</span></div>
+                    <div class="badge-info">
+                        <h3>SQL (Advanced) Badge</h3>
+                        <p>HackerRank</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-links-row">
+                <a href="https://leetcode.com/u/sathwiknagothu/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-tiny"><i class="fa-solid fa-code"></i> LeetCode Profile</a>
+                <a href="https://www.hackerrank.com/profile/balasathwik" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-tiny"><i class="fa-brands fa-hackerrank"></i> HackerRank Profile</a>
+                <a href="https://www.codechef.com/users/balasathwik" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-tiny"><i class="fa-solid fa-bowl-food"></i> CodeChef Profile</a>
+            </div>
+
+            <!-- Achievements & Campus Activities Grid -->
+            <div class="achievements-activities-grid">
+                <!-- Achievements -->
+                <div class="achieve-card glass-card">
+                    <h3>🏆 Achievements</h3>
+                    <ul class="achieve-list">
+                        <li>
+                            <i class="fa-solid fa-trophy"></i>
+                            <div>
+                                <strong>AP EAMCET State Rank 1776</strong>
+                                <p>Secured state rank 1776 out of 150,000+ candidates (Top 1.1% of state).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <div>
+                                <strong>HackerRank SQL (Advanced) Verified</strong>
+                                <p>Verified expert-level SQL and query-optimization skills via direct technical assessment.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Campus Activities -->
+                <div class="activity-card glass-card">
+                    <h3>🎓 Campus Activities &amp; Leadership</h3>
+                    <ul class="activity-list">
+                        <li>
+                            <span class="activity-date">2024</span>
+                            <div>
+                                <strong>Research Team Member — Electoral Club, VIT-AP</strong>
+                                <p>Conducted data analysis and research on voter awareness campaigns, campus voter registration, and voting turnout trends.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="activity-date">2024</span>
+                            <div>
+                                <strong>CONQUER C — CSI Chapter, VIT-AP</strong>
+                                <p>Participated in intensive C programming and logic troubleshooting competition events.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="activity-date">2025</span>
+                            <div>
+                                <strong>Quantum Computing Seminar — Microwave Maven Club</strong>
+                                <p>Explored quantum algorithms, superposition mechanics, and qubit principles with guest speakers.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section scroll-reveal" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <p class="contact-desc">Feel free to reach out for B.Tech 2027 Graduate roles, backend developer internships, or project collaborations.</p>
+                    <ul class="contact-details">
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:balasathwiknagothu@gmail.com">balasathwiknagothu@gmail.com</a></li>
+                        <li><i class="fa-solid fa-phone"></i> +91 93929 05748</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Amaravati, India (VIT-AP University)</li>
+                    </ul>
+                </div>
+                <div class="contact-form-container glass-card">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell me about your role or project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copy">© 2026 Bala Sathwik Nagothu. For a better experience</p>
+            <div class="footer-links">
+                <a href="https://github.com/balasathwiknagothu" target="_blank" rel="noopener noreferrer" class="footer-icon-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://leetcode.com/u/sathwiknagothu/" target="_blank" rel="noopener noreferrer" class="footer-icon-link"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="vertical-align: -0.125em;"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.541l5.097 4.41c.238.204.542.302.853.284a1.36 1.36 0 0 0 .848-.387 1.374 1.374 0 0 0 .437-.96 1.374 1.374 0 0 0-.387-1.012l-5.044-4.364a3.178 3.178 0 0 1-.722-.86 3.09 3.09 0 0 1-.29-.982 3.04 3.04 0 0 1 .15-1.233 3.047 3.047 0 0 1 .59-1.07l3.864-4.136 5.394-5.772A1.374 1.374 0 0 0 14.444.4a1.374 1.374 0 0 0-.961-.4zM22.65 13.916a1.374 1.374 0 0 0-.96-.437H11.232a1.374 1.374 0 0 0-.96.437 1.374 1.374 0 0 0-.437.96 1.374 1.374 0 0 0 .437.961h10.457a1.374 1.374 0 0 0 .961-.437 1.374 1.374 0 0 0 .438-.96 1.374 1.374 0 0 0-.438-.962z"/></svg> LeetCode</a>
+                <a href="https://www.linkedin.com/in/bala-sathwik-nagothu/" target="_blank" rel="noopener noreferrer" class="footer-icon-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <p class="footer-credits">Designed &amp; Coded by Bala Sathwik</p>
+            <a href="#" class="back-to-top" title="Back to Top"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
